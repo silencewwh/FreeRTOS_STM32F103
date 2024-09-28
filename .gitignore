@@ -1,26 +1,19 @@
-# 这是 Git 的忽略文件
-
-.md  
+# 忽略 markdown 文件
+*.md  
 
 # 忽略 listing 下所有文件
-
 07listing/*
 !07listing/.gitkeep
-  
 
 # 忽略 output 下所有文件
-
 05output/*
 !05output/.gitkeep
 
-# 忽略doc目录下所有文件
+# 忽略 doc 目录下所有文件
 08Doc/*
 !08Doc/.gitkeep  
 
 # 忽略 project 目录下除 *.uvopt 和 *.uvproj 格式的其他文件
-
 06project/*
-
-!/06project/*.uvoptx
-
-!/06project/*.uvprojx
+!06project/*.uvopt
+!06project/*.uvproj
