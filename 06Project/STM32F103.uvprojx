@@ -338,7 +338,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,USE_HAL_LEGACY,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>..\02Library\STM32F1xx_HAL_Driver\Inc;..\01Driver\sys;..\01Driver\delay;..\01Driver\usart;..\04User;..\03Startup;..\01Driver\LED</IncludePath>
+              <IncludePath>..\02Library\STM32F1xx_HAL_Driver\Inc;..\01Driver\sys;..\01Driver\delay;..\01Driver\usart;..\04User;..\03Startup;..\01Driver\LED;..\02Library\FreeRTOS\include;..\02Library\FreeRTOS\port\RVDS\ARM_CM3;..\02Library\FreeRTOS\port\MemMang</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -756,6 +756,61 @@
               <FileName>system_stm32f1xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\04User\system_stm32f1xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\04User\FreeRTOSConfig.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FreeRTOS/port</GroupName>
+          <Files>
+            <File>
+              <FileName>port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\port\RVDS\ARM_CM3\port.c</FilePath>
+            </File>
+            <File>
+              <FileName>heap_4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\port\MemMang\heap_4.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>FreeRTOS/src</GroupName>
+          <Files>
+            <File>
+              <FileName>croutine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\src\croutine.c</FilePath>
+            </File>
+            <File>
+              <FileName>event_groups.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\src\event_groups.c</FilePath>
+            </File>
+            <File>
+              <FileName>list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\src\list.c</FilePath>
+            </File>
+            <File>
+              <FileName>queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\src\queue.c</FilePath>
+            </File>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\src\tasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>timers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\02Library\FreeRTOS\src\timers.c</FilePath>
             </File>
           </Files>
         </Group>
