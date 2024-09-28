@@ -1,24 +1,24 @@
 # 这是 Git 的忽略文件
 
-README.md  
+.md  
 
 # 忽略 listing 下所有文件
 
-/07listing/*
+07listing/*
 
   
 
 # 忽略 output 下所有文件
 
-/05output/*
+05output/*
 
 # 忽略doc目录下所有文件
-/08Doc/*
+08Doc/*
   
 
 # 忽略 project 目录下除 *.uvopt 和 *.uvproj 格式的其他文件
 
-/06project/*
+06project/*
 
 !/06project/*.uvoptx
 
