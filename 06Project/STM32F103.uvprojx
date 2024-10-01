@@ -338,7 +338,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,USE_HAL_LEGACY,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>..\02Library\STM32F1xx_HAL_Driver\Inc;..\01Driver\sys;..\01Driver\delay;..\01Driver\usart;..\04User;..\03Startup;..\01Driver\LED;..\02Library\FreeRTOS\include;..\02Library\FreeRTOS\port\RVDS\ARM_CM3;..\02Library\FreeRTOS\port\MemMang</IncludePath>
+              <IncludePath>..\02Library\STM32F1xx_HAL_Driver\Inc;..\01Driver\sys;..\01Driver\delay;..\01Driver\usart;..\04User;..\03Startup;..\01Driver\LED;..\02Library\FreeRTOS\include;..\02Library\FreeRTOS\port\RVDS\ARM_CM3</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -762,6 +762,11 @@
               <FileType>5</FileType>
               <FilePath>..\04User\FreeRTOSConfig.h</FilePath>
             </File>
+            <File>
+              <FileName>includes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\04User\includes.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -776,6 +781,11 @@
               <FileName>heap_4.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\02Library\FreeRTOS\port\MemMang\heap_4.c</FilePath>
+            </File>
+            <File>
+              <FileName>portmacro.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\02Library\FreeRTOS\port\RVDS\ARM_CM3\portmacro.h</FilePath>
             </File>
           </Files>
         </Group>
